@@ -1,0 +1,356 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/* global style */
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0%;
+  padding: 0;
+}
+
+* {
+  letter-spacing: 1px;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  font-size: 60%;
+  color: black;
+  text-align: center;
+}
+
+.btn {
+  padding: 1em;
+  border: none;
+  border-radius: 4px;
+  font-size: 110%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: teal;
+  color: white;
+  vertical-align: middle;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: rgb(1, 43, 43);
+  -webkit-box-shadow: 2px 2px 3px black;
+          box-shadow: 2px 2px 3px black;
+}
+
+/* Header style */
+header {
+  background-color: rgb(100, 8, 8);
+}
+
+header h1 {
+  font-family: "Volkhov", serif;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: dodgerblue;
+  font-size: 2.5em;
+}
+
+/* Nav style */
+#nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #050505;
+}
+
+#nav a {
+  text-align: center;
+  max-width: 35%;
+  text-decoration: none;
+  font-size: 140%;
+  color: white;
+  padding: 0.5em;
+  border-radius: 1px;
+}
+
+#nav a:hover {
+  background-color: #1f1d1d;
+}
+
+/* Main style */
+main {
+  padding: 1em;
+  min-height: 80vh;
+}
+div#wrapper {
+  background-image: url(./background1.jpg);
+  border-radius: 10px;
+  padding: 1em;
+}
+/* btns style */
+#loginBtn,
+#signUpBtn {
+  width: 9em;
+  margin: 1em;
+  background-color: rgb(75, 5, 5);
+  color: dodgerblue;
+  margin-top: 1em;
+}
+
+/* forms style */
+form {
+  max-width: 60%;
+  margin: auto;
+  padding-top: 2em;
+}
+fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 3em;
+  background-color: deepskyblue;
+  border: none;
+  border-radius: 4px;
+  text-align: left;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 120%;
+}
+
+label,
+#p-label {
+  padding: 1em;
+  padding-left: 0px;
+  font-weight: 450;
+}
+
+#p-label {
+  padding-bottom: 0%;
+}
+
+label.radio {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  padding: 0.5em;
+  font-size: 1em;
+  border: none;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="radio"] {
+  height: 3em;
+  width: 3em;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+#msg {
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #050505;
+  background-color: rgba(255, 255, 255, 40%);
+  margin: 1em auto;
+  padding: 1em;
+  max-width: 80%;
+  border-radius: 4px;
+}
+
+.hide {
+  display: none;
+}
+
+#nav #username.user {
+  color: rgb(4, 77, 4);
+}
+
+#flex-container {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 1em;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  border-radius: 4px;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  min-height: 70vh;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    font-size: 85%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 95%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    font-size: 100%;
+  }
+}
+
+.bookModel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 400px;
+  min-height: 400%;
+  border-radius: 10px;
+  padding: 0.5em;
+  background-color: rgb(0, 0, 0);
+}
+
+.bookModel:hover {
+  -webkit-box-shadow: 2px 2px 5px #aaa5a5;
+          box-shadow: 2px 2px 5px #aaa5a5;
+}
+
+.bookModel .book-content {
+  position: relative;
+  border-radius: 10px;
+  padding: 1.3em;
+  background-color: rgb(240, 217, 188);
+}
+.bookModel p {
+  background-color: white;
+  margin: 0.4em;
+  margin-right: 1em;
+  padding: 0.4em;
+  border-radius: 2px;
+  line-height: 1.5;
+  font-size: 120%;
+  font-weight: 500;
+  border-left: 0.5em solid rgb(0, 7, 0);
+  text-align: left;
+}
+
+.bookModel span {
+  color: rgb(18, 2, 61);
+  margin-left: 0.5em;
+}
+
+button.toggle-btn {
+  width: 25%;
+  vertical-align: middle;
+  padding: 0.4em;
+  margin-left: 1em;
+  font-size: 70%;
+}
+
+span.remove {
+  font-size: 2em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  padding: 0 5px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+span.remove:hover {
+  background-color: rgb(71, 64, 64);
+  color: white;
+}
+
+footer {
+  background-color: rgb(245, 177, 177);
+  padding: 1em;
+}
+
+footer #list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0.5em;
+  margin: 0;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+footer #list li a {
+  text-decoration: none;
+  color: #050505;
+  padding: 0.7em;
+  border-radius: 2px;
+}
+
+footer #list li a#delete {
+  color: red;
+}
+
+footer #list li a:hover {
+  background-color: #444141;
+  color: white;
+}
+
+span.green {
+  color: green;
+}
+span.red {
+  color: red;
+}
+

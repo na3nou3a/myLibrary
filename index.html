@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Volkhov:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Library Books</h1>
+
+      <nav id="nav">
+        <a id="logout" class="hide" href="#">Logout</a>
+        <a id="username" class="user hide" href="#"></a>
+      </nav>
+    </header>
+    <main>
+      <!-- add book btn -->
+      <button class="btn hide" id="add-book-btn">add book</button>
+
+      <!-- Message -->
+      <p id="msg">Welcome to your Library! Please Sign up or Login to your account.</p>
+       <!-- Sign up an Login Btns -->
+      <button class="btn" id="loginBtn">Login</button>
+      <button class="btn" id="signUpBtn">Sign Up</button>     
+<div id="wrapper">
+      <!-- Madel for login-->
+      <form action="" id="loginModel" class="hide">
+        <fieldset>
+          <legend>Login</legend>
+          <label for="l-name">UserName</label>
+          <input
+            type="text"
+            id="l-name"
+            placeholder="UserName"
+            autofocus
+            value=""
+            required
+          />
+
+          <label for="l-email">Email</label>
+          <input
+            type="email"
+            id="l-email"
+            placeholder="Email"
+            value=""
+            required
+          />
+
+          <input type="submit" class="btn submit" value="Login" />
+        </fieldset>
+      </form>
+
+      <!-- Madel for Sign Up-->
+      <form action="" id="signUpModel" class="hide">
+        <fieldset>
+          <legend>Sign up for free account</legend>
+          <label for="s-name">UserName</label>
+          <input
+            type="text"
+            id="s-name"
+            placeholder="UserName"
+            autofocus
+            value=""
+            required
+          />
+
+          <label for="s-email">Email</label>
+          <input
+            type="email"
+            id="s-email"
+            placeholder="Email"
+            value=""
+            required
+          />
+
+          <input type="submit" class="btn submit" value="Sign Up" />
+        </fieldset>
+      </form>
+
+      <!-- Model Form for New Book -->
+      <form action="" id="bookFormModel" class="hide">
+        <fieldset>
+          <legend>Create New Book</legend>
+          <label for="title">Book Name</label>
+          <input
+            type="text"
+            id="title"
+            placeholder="Book Title"
+            autofocus
+            required
+          />
+
+          <label for="author">Author</label>
+          <input type="text" id="author" placeholder="Author" required />
+
+          <label for="pages">Number of Pages</label>
+          <input type="number" id="pages" min="2" placeholder="Pages" required />
+
+          <p id="p-label">Completed?</p>
+          <label class="radio" for="yes">
+            <input type="radio" id="yes" name="isRead" value="Yes" checked />
+            YES</label
+          >
+
+          <label class="radio" for="no">
+            <input type="radio" id="no" name="isRead" value="No" />
+            NO</label
+          >
+
+          <input type="submit" class="btn submit" value="New Book" />
+        </fieldset>
+      </form>
+
+      <!-- Grid Container -->
+      <div id="flex-container"></div>
+      </div>
+    </main>
+    <footer>
+      <ul id="list">
+        <li><a id="delete" class="hide" href="#">delete your account</a></li>
+        <li><a href="#" target="_blank">GitHub</a></li>
+        <li><a href="mailto:mirnanina2014@gmail.com">Email</a></li>
+        <li>
+          <a
+            href="https://www.theodinproject.com/courses/javascript/lessons/library"
+            target="_blank"
+            >The Odin Project</a
+          >
+        </li>
+      </ul>
+      <p>&copy; 2021</p>
+    </footer>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
